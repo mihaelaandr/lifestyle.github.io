@@ -1,0 +1,75 @@
+/* ====== GENERAL ====== */
+body {
+    font-family: cursive, sans-serif;
+    margin: 0;
+    background-color: #aefd8a;
+}
+/* Linie modernă sub titlurile H2 */
+h2 {
+    border-bottom: 3px solid #2a8f0b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+header, footer {
+    background-color: #aefd8a;
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    text-align: center;
+}
+
+section {
+    padding: 30px;
+    background-color: #aefd8a ;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ====== MENIU ====== */
+nav {
+    background-color:#aefd8a;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+}
+
+nav a:hover {
+    color: #4d0101;
+}
+
+/* ====== MENIU RESPONSIVE ====== */
+#menuToggle {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    #menuToggle {
+        display: block;
+        background: #aefd8a;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
